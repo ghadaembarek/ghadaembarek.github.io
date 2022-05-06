@@ -1,0 +1,82 @@
+<html></<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Ghada Embarek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row11">
+
+      <div class="column l">
+        <h2 style="font-size:250%">Ghada Embarek</h2>
+        <div class="about me">
+          <img src="profile.png" style="width: 180px"/>
+          <p>I always search for human secrets. When I draw, I close my eyes and unleash my brush. I am fond of body language and express it with
+          simple lines that are sometimes soft and sometimes harsh. I prefer painting with watercolor for its purity and sincerity of expression.
+          Because of its one immutable action and the vast white space that the canvas posesses, my work carries freedom and ease. <br> - G.E.</p>
+          <b><a href="bio.html" style="color:black; text-decoration:none">View full bio</a></b><br>
+          <b><a href="contact.html" style="color:black; text-decoration:none">Contact</a></b>
+        </div>
+      </div>
+
+      <div class="column r">
+        <div class="library">
+          <h3 style="font-size:200%;">Artworks</h3>
+          <b><a href="ghadas art.html" style="color:black; text-decoration:none">View all artworks</a></b><br>
+
+          <br>
+          <div id="bigpic" class="w3-content" style="max-width:1200px">
+            <img class="mySlides" src="images/Life_140_210_CM_(acrylic_on_canvas).jpg" alt="" style="width:100%;display:none" />
+            <img class="mySlides" src="images/image5_(1).jpg" alt="" style="width:100%"/>
+            <img class="mySlides" src="images/image3.png" alt="" style="width:100%;display:none"/>
+            <img class="mySlides" src="images/image1_(1).png" alt="" style="width:100%;display:none"/>
+            <img class="mySlides" src="images/image0_(1).png" alt="" style="width:100%;display:none"/>
+            <img class="mySlides" src="images/Journey_100___80_CM.jpg" alt="" style="width:100%;display:none"/>
+            <img class="mySlides" src="images/Huddle_100___80_CM.jpg" alt="" style="width:100%;display:none"/>
+
+          </div>
+          <br>
+          <div class="wrapper">
+            <div class="innerwrapper">
+                <img class="gallery-item" src="images/Life_140_210_CM_(acrylic_on_canvas).jpg" alt="" onclick="currentDiv(1)"/>
+                <img class="gallery-item" src="images/image5_(1).jpg" alt=""  onclick="currentDiv(2)"/>
+                <img class="gallery-item" src="images/image3.png" alt="" onclick="currentDiv(3)"/>
+                <img class="gallery-item" src="images/image1_(1).png" alt="" onclick="currentDiv(4)"/>
+                <img class="gallery-item" src="images/image0_(1).png" alt="" onclick="currentDiv(5)"/>
+                <img class="gallery-item" src="images/Journey_100___80_CM.jpg" alt="" onclick="currentDiv(6)"/>
+                <img class="gallery-item" src="images/Huddle_100___80_CM.jpg" alt="" onclick="currentDiv(7)"/>
+            </div>
+          </div>
+          <script>
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+              }
+              x[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " w3-opacity-off";
+            }
+          </script>
+        </div>
+        </div>
+      </div>
+      <br>
+  </body>
+  <!-- <footer>© 2022 Ghada Embarek</footer> -->
+</html>
