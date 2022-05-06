@@ -8,6 +8,8 @@ body {
 		-epub-hyphens:auto;
 	} */
 
+
+
 a.goto{
 	color:white;
 	text-decoration:none;
@@ -335,6 +337,7 @@ div._idGenObjectLayout-1 {
 }
 
 .column img {
+
 	display:inline-block;
 	/* vertical-align:top; */
 	margin-bottom: 5px;
