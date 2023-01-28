@@ -13,10 +13,6 @@
     text-align: center;
   }
 
-  .container {
-    margin: 0 auto;
-  }
-
   h1 {
     color: #333;
     margin-top: 50px;
@@ -25,6 +21,7 @@
   p {
     color: #555;
     margin-bottom: 50px;
+    font-size: 2vw;
   }
 
   .social-links a {
@@ -32,23 +29,29 @@
     text-decoration: none;
     font-size: 20px;
     margin-right: 15px;
+    font-size: 2vw;
   }
 
   .social-links a:hover {
     color: #000;
   }
 
-  /* Media query for screens smaller than 700px */
-  @media only screen and (max-width: 700px) {
+  @media only screen and (min-width: 700px) {
     h1 {
-      width: 100%;
+      font-size: 6rem;
+    }
+    p{
+      font-size: 2rem;
     }
     .social-links a {
-      font-size: 25px;
+      font-size: 3rem;
     }
     .container {
-      width: 100%;
+      margin: auto auto;
     }
+
+
+
   }
 </style>
 <body>
